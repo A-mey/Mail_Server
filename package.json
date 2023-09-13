@@ -1,0 +1,33 @@
+{
+  "name": "bookoto_mail_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node --unhandled-rejections=strict ./dist/src/app.js",
+    "dev": "export DEPLOY_STAGE=development && tsc && node --unhandled-rejections=strict ./dist/src/app.js",
+    "debug": "export DEBUG=* && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ameya",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/debug": "^4.1.8",
+    "@types/nodemailer": "^6.4.9",
+    "ajv": "^8.12.0",
+    "i": "^0.3.7",
+    "kafkajs": "^2.2.4",
+    "npm": "^9.8.1",
+    "source-map-support": "^0.5.21",
+    "tslint": "^6.1.3",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.3.1",
+    "nodemailer": "^6.9.4",
+    "winston": "^3.10.0"
+  }
+}
